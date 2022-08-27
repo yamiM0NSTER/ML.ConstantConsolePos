@@ -10,8 +10,8 @@ namespace ML.ConstantConsolePos {
     WinAPI.RECT _consoleRect;
 
     public override void OnPreInitialization() {
-      _settings = new Settings();
       _console = new ConsoleHandler();
+      _settings = new Settings(_console);
 
       if(!_console.IsPresent)
         return;
@@ -22,7 +22,7 @@ namespace ML.ConstantConsolePos {
         _settings.ConsoleRect = rect;
         _consoleRect = rect;
       } else {
-        _console.SetRect(_settings.ConsoleRect);
+        _console.SetRect(_settings);
         _consoleRect = _settings.ConsoleRect;
       }
     }

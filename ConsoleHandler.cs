@@ -15,8 +15,16 @@ namespace ML.ConstantConsolePos {
       rect = consoleRect;
     }
 
-    public void SetRect(in WinAPI.RECT rect) {
-      WinAPI.SetWindowPos(_consoleHandle, IntPtr.Zero, rect.Left, rect.Top, rect.Width, rect.Height, WinAPI.SWP_NOZORDER | WinAPI.SWP_SHOWWINDOW);
+    public WinAPI.RECT GetRect() {
+      WinAPI.GetWindowRect(_consoleHandle, out var rect);
+      return rect;
+    }
+
+    public void SetRect(Settings settings) {
+      var rect = settings.ConsoleRect;
+      var height = settings.UseFixedSize.Value ? settings.FixedHeight.Value : rect.Height;
+      var width = settings.UseFixedSize.Value ? settings.FixedWidth.Value : rect.Width;
+      WinAPI.SetWindowPos(_consoleHandle, IntPtr.Zero, rect.Left, rect.Top, width, height, WinAPI.SWP_NOZORDER | WinAPI.SWP_SHOWWINDOW);
     }
   }
 }
