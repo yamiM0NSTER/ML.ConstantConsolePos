@@ -27,9 +27,9 @@ namespace ML.PersistentConsole {
     }
 
     public Settings() {
-      _category = MelonPreferences.CreateCategory("ML_ConstantConsolePos");
+      _category = MelonPreferences.CreateCategory("ML_PersistentConsole");
       _consoleRect = _category.CreateEntry("ConsoleRect", WinAPI.RECT.Zero);
-      _checkPositionEverySeconds = _category.CreateEntry("CheckPositionEverySeconds", 1.0f);
+      _checkPositionEverySeconds = _category.CreateEntry("CheckRectEverySeconds", 1.0f);
     }
 
     public void Save() {
