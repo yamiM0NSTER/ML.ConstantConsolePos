@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML.ConstantConsolePos", "ML.ConstantConsolePos.csproj", "{62218498-4998-43F9-A24C-EF2394C89391}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML.PersistentConsole", "ML.PersistentConsole.csproj", "{62218498-4998-43F9-A24C-EF2394C89391}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

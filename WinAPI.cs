@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace ML.ConstantConsolePos {
+namespace ML.PersistentConsole {
   internal class WinAPI {
     [DllImport("Kernel32.dll")]
     public static extern IntPtr GetConsoleWindow();

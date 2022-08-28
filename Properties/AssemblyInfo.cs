@@ -37,11 +37,11 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: MelonInfo(typeof(ML.ConstantConsolePos.PluginMain), ModInfo.Name, ModInfo.Version, ModInfo.Author, ModInfo.Download)]
+[assembly: MelonInfo(typeof(ML.PersistentConsole.PluginMain), ModInfo.Name, ModInfo.Version, ModInfo.Author, ModInfo.Download)]
 [assembly: MelonAuthorColor(System.ConsoleColor.Magenta)]
 internal static class ModInfo {
-  public const string Name = "ML.ConstantConsolePos";
+  public const string Name = "ML.PersistentConsole";
   public const string Author = "yamiM0NSTER";
   public const string Version = "1.0.0";
-  public const string Download = "https://github.com/yamiM0NSTER/ML.ConstantConsolePos";
+  public const string Download = "https://github.com/yamiM0NSTER/ML.PersistentConsole";
 }

@@ -1,6 +1,6 @@
 ﻿using MelonLoader;
 
-namespace ML.ConstantConsolePos {
+namespace ML.PersistentConsole {
   internal class Settings {
     MelonPreferences_Category _category;
     MelonPreferences_Entry<WinAPI.RECT> _consoleRect;

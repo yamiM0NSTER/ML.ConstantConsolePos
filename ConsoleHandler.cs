@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ML.ConstantConsolePos {
+namespace ML.PersistentConsole {
   internal class ConsoleHandler {
     IntPtr _consoleHandle;
 

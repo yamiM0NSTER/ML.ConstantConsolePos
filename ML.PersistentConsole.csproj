@@ -7,8 +7,8 @@
     <ProjectGuid>{62218498-4998-43F9-A24C-EF2394C89391}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ML.ConstantConsolePos</RootNamespace>
-    <AssemblyName>ML.ConstantConsolePos</AssemblyName>
+    <RootNamespace>ML.PersistentConsole</RootNamespace>
+    <AssemblyName>ML.PersistentConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

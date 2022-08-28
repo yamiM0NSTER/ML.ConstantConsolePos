@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace ML.ConstantConsolePos {
+namespace ML.PersistentConsole {
   public class PluginMain : MelonPlugin {
     object _co_CheckConsolePos = null;
     ConsoleHandler _console = null;
