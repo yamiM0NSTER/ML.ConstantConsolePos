@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Emit;
 using System.Runtime.InteropServices;
 
 namespace ML.PersistentConsole {
@@ -25,15 +26,20 @@ namespace ML.PersistentConsole {
 
       public static RECT Zero = new RECT{ Bottom = 0, Left = 0, Right = 0, Top = 0 };
 
-      public int Width => Right - Left;
-      public int Height => Bottom - Top;
+      public int Width => Math.Abs(Right - Left);
+      public int Height => Math.Abs(Bottom - Top);
+
+      public override string ToString() {
+        return $"Rect[{Top}, {Left}, {Bottom}, {Right}]";
+      }
     }
 
     [DllImport("user32.dll", EntryPoint = "SetWindowPos")]
     public static extern IntPtr SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int x, int y, int width, int height, int flags);
 
-    public const int SWP_NOZORDER = 0x0004;
     public const int SWP_NOSIZE = 0x0001;
+    public const int SWP_NOMOVE = 0x0002;
+    public const int SWP_NOZORDER = 0x0004;
     public const int SWP_SHOWWINDOW = 0x0040;
   }
 }

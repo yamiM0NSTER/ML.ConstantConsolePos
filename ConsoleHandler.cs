@@ -16,7 +16,8 @@ namespace ML.PersistentConsole {
     }
 
     public void SetRect(in WinAPI.RECT rect) {
-      WinAPI.SetWindowPos(_consoleHandle, IntPtr.Zero, rect.Left, rect.Top, rect.Width, rect.Height, WinAPI.SWP_NOZORDER | WinAPI.SWP_SHOWWINDOW);
+      WinAPI.SetWindowPos(_consoleHandle, IntPtr.Zero, rect.Left, rect.Top, 0, 0, WinAPI.SWP_NOSIZE);
+      WinAPI.SetWindowPos(_consoleHandle, IntPtr.Zero, 0, 0, rect.Width, rect.Height, WinAPI.SWP_NOMOVE);
     }
   }
 }
