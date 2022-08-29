@@ -42,6 +42,6 @@ using System.Runtime.InteropServices;
 internal static class ModInfo {
   public const string Name = "ML.PersistentConsole";
   public const string Author = "yamiM0NSTER";
-  public const string Version = "1.0.0";
+  public const string Version = "1.0.1";
   public const string Download = "https://github.com/yamiM0NSTER/ML.PersistentConsole";
 }
